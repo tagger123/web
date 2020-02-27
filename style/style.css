@@ -1,0 +1,659 @@
+/*     background-color: #f2fbfb; */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One';
+}
+a{
+    color: #333333;
+    text-decoration: none;
+}
+body{
+    margin-top: 20vh;
+    display: grid;
+}
+.hello h1{
+    color: #403d40;
+}
+.hello p{
+    color: #cdcccd;
+}
+.item:nth-child(1){
+    background-color: #baecee;
+}
+.item:nth-child(2){
+    background-color: #fae1ef;
+}
+.item:nth-child(3){
+    background-color: #fefbe5;
+}
+.item:nth-child(4){
+    background-color: #e8bdf5;
+    margin-bottom: 5vh;
+}
+
+@media (min-width: 1281px) {
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(5 , minmax(30px,1fr));
+    }
+    .hamburger{
+        width: 25px;
+        height: 21px;
+        border: none;
+        border-top: 3px solid #333333;
+        background-color: transparent;
+        position: relative;
+        transition: .3s transform linear;
+    }
+    .hamburger::before, .hamburger::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid #333333;
+        transform: translateY(3px);
+    }
+    .hamburger::after{
+        transform: translateY(9px);
+        transition: .3s transform linear;
+    }
+    .hamburger:focus{
+        transform: rotate(45deg) translateX(-3px);
+        border: none;
+
+    }
+    .hamburger:focus ~.nav_element{
+        opacity: 1;
+    }
+    .hamburger:focus::after{
+        transform: rotate(-90deg) translateX(-3px);
+    }
+    .nav_element{
+        height: 20px;
+        opacity: 0;
+        transition: .5s opacity ease;
+    }
+    .hello{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(20vw,1fr));
+    }
+    .hello h1{
+        margin-left: -11px;
+        font-size: 100px;
+        font-weight: 100;
+        padding-top: 10vh;
+        padding-bottom: 1vh;
+    }
+    .hello p{
+        font-size: 14px;
+        padding-bottom: 18vh;
+    }
+    body{
+        padding: 0 30vw;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(20vw, 1fr));
+    }
+    .item{
+        width: 20vw;
+        height: 20vw;
+    }
+    .shop{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        letter-spacing: 1em;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .line{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2 ,minmax(20vw,1fr));
+        padding-bottom: 6vh;
+    }
+    .line div:nth-child(1){
+        border-right: 2px solid #cdcccd;
+    }
+    .info{
+        text-align: center;
+        padding-bottom: 5vw;
+    }
+    .info p{
+        font-size: 12px;
+        margin: 0 5vw;
+    }
+    .links{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3 ,minmax(8vw,1fr));
+        padding-bottom: 5vh;
+    }
+    footer .line{
+        padding-bottom: 0;
+    }
+    .items_link{
+        border-top:2px solid #333333 ;
+        border-bottom: 2px solid #333333;
+        width: 8vw;
+    }
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(1 , minmax(30px,1fr));
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .nav_element{
+        height: 20px;
+        opacity: 0;
+        transition: .5s opacity ease;
+    }
+    .hamburger{
+        margin-left: 60px;
+        width: 25px;
+        height: 21px;
+        border: none;
+        border-top: 3px solid #333333;
+        background-color: transparent;
+        position: relative;
+        transition: .5s transform linear;
+    }
+    .hamburger::before, .hamburger::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid #333333;
+        transform: translateY(3px);
+    }
+    .hamburger::after{
+        transform: translateY(9px);
+        transition: .5s transform linear;
+    }
+    .hamburger:focus{
+        transform: rotate(45deg) translateX(-3px);
+        border: none;
+
+    }
+    .hamburger:focus ~.nav_element{
+        opacity: 1;
+    }
+    .hamburger:focus::after{
+        transform: rotate(-90deg) translateX(-3px);
+    }
+    body{
+        padding: 0 15vw;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(20vw, 1fr));
+    }
+    .item{
+        width: 20vw;
+        height: 20vw;
+    }
+    .hello{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(20vw,1fr));
+    }
+    .hello h1{
+        margin-left: -11px;
+        font-size: 70px;
+        font-weight: 100;
+        padding-top: 10vh;
+        padding-bottom: 1vh;
+    }
+    .hello p{
+        font-size: 12px;
+        padding-bottom: 18vh;
+    }
+    body{
+        padding: 0 30vw;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(20vw, 1fr));
+    }
+    .item{
+        width: 20vw;
+        height: 20vw;
+    }
+    .shop{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        letter-spacing: 1em;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .line{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2 ,minmax(20vw,1fr));
+        padding-bottom: 6vh;
+    }
+    .line div:nth-child(1){
+        border-right: 2px solid #cdcccd;
+    }
+    .info{
+        text-align: center;
+        padding-bottom: 5vw;
+    }
+    .info p{
+        font-size: 12px;
+        margin: 0 5vw;
+    }
+    .links{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3 ,minmax(8vw,1fr));
+        padding-bottom: 5vh;
+    }
+    footer .line{
+        padding-bottom: 0;
+    }
+    .items_link{
+        border-top:2px solid #333333 ;
+        border-bottom: 2px solid #333333;
+        width: 12vw;
+    }
+}
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(1 , minmax(30px,1fr));
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .nav_element{
+        height: 20px;
+        opacity: 0;
+        transition: .5s opacity ease;
+    }
+    .hamburger{
+        margin-left: 60px;
+        width: 25px;
+        height: 21px;
+        border: none;
+        border-top: 3px solid #333333;
+        background-color: transparent;
+        position: relative;
+        transition: .5s transform linear;
+    }
+    .hamburger::before, .hamburger::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid #333333;
+        transform: translateY(3px);
+    }
+    .hamburger::after{
+        transform: translateY(9px);
+        transition: .5s transform linear;
+    }
+    .hamburger:focus{
+        transform: rotate(45deg) translateX(-3px);
+        border: none;
+
+    }
+    .hamburger:focus ~.nav_element{
+        opacity: 1;
+    }
+    .hamburger:focus::after{
+        transform: rotate(-90deg) translateX(-3px);
+    }
+    body{
+        padding: 0 10vw;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(40vw, 1fr));
+    }
+    .item{
+        width: 40vw;
+        height: 40vw;
+    }
+    .hello{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(20vw,1fr));
+    }
+    .hello h1{
+        margin-left: -11px;
+        font-size: 100px;
+        font-weight: 100;
+        padding-top: 10vh;
+        padding-bottom: 1vh;
+    }
+    .hello p{
+        font-size: 14px;
+        padding-bottom: 18vh;
+    }
+    .shop{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        letter-spacing: 1em;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .line{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2 ,minmax(20vw,1fr));
+        padding-bottom: 6vh;
+    }
+    .line div:nth-child(1){
+        border-right: 2px solid #cdcccd;
+    }
+    .info{
+        text-align: center;
+        padding-bottom: 10vw;
+    }
+    .info p{
+        font-size: 12px;
+        margin: 0 5vw;
+    }
+    .links{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3 ,minmax(8vw,1fr));
+        padding-bottom: 5vh;
+    }
+    footer .line{
+        padding-bottom: 0;
+    }
+    .items_link{
+        border-top:2px solid #333333 ;
+        border-bottom: 2px solid #333333;
+        width: 20vw;
+    }
+}
+
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(1 , minmax(30px,1fr));
+        margin-right: 0;
+        margin-left: auto;
+    }
+    .nav_element{
+        height: 20px;
+        opacity: 0;
+        transition: .5s opacity ease;
+    }
+    .hamburger{
+        margin-left: 60px;
+        width: 25px;
+        height: 21px;
+        border: none;
+        border-top: 3px solid #333333;
+        background-color: transparent;
+        position: relative;
+        transition: .5s transform linear;
+    }
+    .hamburger::before, .hamburger::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid #333333;
+        transform: translateY(3px);
+    }
+    .hamburger::after{
+        transform: translateY(9px);
+        transition: .5s transform linear;
+    }
+    .hamburger:focus{
+        transform: rotate(45deg) translateX(-3px);
+        border: none;
+
+    }
+    .hamburger:focus ~.nav_element{
+        opacity: 1;
+    }
+    .hamburger:focus::after{
+        transform: rotate(-90deg) translateX(-3px);
+    }
+    
+    body{
+        padding: 0 10vw;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(40vw, 1fr));
+    }
+    .item{
+        width: 40vw;
+        height: 40vw;
+    }
+    .items_link{
+        border-top:2px solid #333333 ;
+        border-bottom: 2px solid #333333;
+        width: 40vw;
+    }
+}
+    
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    body{
+        padding: 0 5vw;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100vw,1fr));
+    }
+    .item{
+        width: 90vw;
+        height: 90vw;
+    }
+    .hello{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(20vw,1fr));
+    }
+    .hello h1{
+        margin-left: -11px;
+        font-size: 100px;
+        font-weight: 100;
+        padding-top: 10vh;
+        padding-bottom: 1vh;
+    }
+    .hello p{
+        font-size: 14px;
+        padding-bottom: 18vh;
+    }
+    .shop{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        letter-spacing: 1em;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .line{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2 ,minmax(20vw,1fr));
+        padding-bottom: 6vh;
+    }
+    .line div:nth-child(1){
+        border-right: 2px solid #cdcccd;
+    }
+    .info{
+        text-align: center;
+        padding-bottom: 5vw;
+    }
+    .info p{
+        font-size: 10px;
+        margin: 0 5vw;
+    }
+    .links{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3 ,minmax(8vw,1fr));
+        padding-bottom: 5vh;
+    }
+    footer .line{
+        padding-bottom: 0;
+    }
+    .items_link{
+        border-top:2px solid #333333 ;
+        border-bottom: 2px solid #333333;
+        width: 40vw;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    body{
+        padding: 0 5vw;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100vw,1fr));
+    }
+    .item{
+        width: 90vw;
+        height: 90vw;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(1 , minmax(30px,1fr));
+        margin-right: 10px;
+        margin-left: auto;
+    }
+    .nav_element{
+        height: 20px;
+        margin-right: 30px;
+        text-align: right;
+        opacity: 0;
+        transition: .5s opacity ease;
+    }
+    .hamburger{
+        margin-left: 60px;
+        width: 25px;
+        height: 21px;
+        border: none;
+        border-top: 3px solid #333333;
+        background-color: transparent;
+        position: relative;
+        transition: .5s transform linear;
+    }
+    .hamburger::before, .hamburger::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 3px solid #333333;
+        transform: translateY(3px);
+    }
+    .hamburger::after{
+        transform: translateY(9px);
+        transition: .5s transform linear;
+    }
+    .hamburger:focus{
+        transform: rotate(45deg) translateX(-3px);
+        border: none;
+
+    }
+    .hamburger:focus ~.nav_element{
+        opacity: 1;
+    }
+    .hamburger:focus::after{
+        transform: rotate(-90deg) translateX(-3px);
+    }
+    .hello{
+        display: grid;
+        grid-template-columns: repeat(2,minmax(20vw,1fr));
+    }
+    .hello h1{
+        margin-left: -5px;
+        font-size: 55px;
+        font-weight: 100;
+        padding-top: 10vh;
+        padding-bottom: 1vh;
+    }
+    .hello p{
+        font-size: 10px;
+        padding-bottom: 18vh;
+    }
+    .shop{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+        letter-spacing: 1em;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .line{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2 ,minmax(20vw,1fr));
+        padding-bottom: 6vh;
+    }
+    .line div:nth-child(1){
+        border-right: 2px solid #cdcccd;
+    }
+    .info{
+        text-align: center;
+        padding-bottom: 5vw;
+    }
+    .info p{
+        font-size: 10px;
+        margin: 0 5vw;
+    }
+    .links{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3 ,minmax(8vw,1fr));
+        padding-bottom: 5vh;
+    }
+    footer .line{
+        padding-bottom: 0;
+    }
+    .items_link{
+        border-top:2px solid #333333 ;
+        border-bottom: 2px solid #333333;
+        width: 40vw;
+    }
+    
+  }
