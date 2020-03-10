@@ -140,6 +140,49 @@ body{
         border-bottom: 2px solid #333333;
         width: 8vw;
     }
+    /* blog elements */
+    .blog_element{
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        padding-bottom: 4vh;
+    }
+    .blog_element h1{
+        text-align: center;
+        font-size: 12px;
+    }
+    .blog_element p{
+        text-align: center;
+        font-size: 10px;
+        color: #cdcccd;
+    }
+    .title h1{
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 4vh;
+
+    }
+    .blog_text p{
+        font-size: 15px;
+        text-align: left;
+        color: #cdcccd;
+    }
+    /* faq elements */
+    .faq_element{
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        padding-bottom: 4vh;
+    }
+    .faq_number{
+        font-size: 40px;
+    }
+    .faq_question{
+        font-size: 26px;
+    }
+    .faq_answer{
+        font-size: 14px;
+        color: #cdcccd;
+
+    }
 }
   
   /* 
@@ -269,6 +312,49 @@ body{
         border-bottom: 2px solid #333333;
         width: 12vw;
     }
+    /* blog elements */
+    .blog_element{
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        padding-bottom: 4vh;
+    }
+    .blog_element h1{
+        text-align: center;
+        font-size: 12px;
+    }
+    .blog_element p{
+        text-align: center;
+        font-size: 10px;
+        color: #cdcccd;
+    }
+    .title h1{
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 4vh;
+
+    }
+    .blog_text p{
+        font-size: 15px;
+        text-align: left;
+        color: #cdcccd;
+    }
+        /* faq elements */
+        .faq_element{
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            padding-bottom: 4vh;
+        }
+        .faq_number{
+            font-size: 40px;
+        }
+        .faq_question{
+            font-size: 26px;
+        }
+        .faq_answer{
+            font-size: 14px;
+            color: #cdcccd;
+    
+        }
 }
   /* 
     ##Device = Tablets, Ipads (portrait)
@@ -387,6 +473,49 @@ body{
         border-bottom: 2px solid #333333;
         width: 20vw;
     }
+    /* blog elements */
+    .blog_element{
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        padding-bottom: 4vh;
+    }
+    .blog_element h1{
+        text-align: center;
+        font-size: 12px;
+    }
+    .blog_element p{
+        text-align: center;
+        font-size: 10px;
+        color: #cdcccd;
+    }
+    .title h1{
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 4vh;
+
+    }
+    .blog_text p{
+        font-size: 15px;
+        text-align: left;
+        color: #cdcccd;
+    }
+        /* faq elements */
+        .faq_element{
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            padding-bottom: 4vh;
+        }
+        .faq_number{
+            font-size: 40px;
+        }
+        .faq_question{
+            font-size: 26px;
+        }
+        .faq_answer{
+            font-size: 14px;
+            color: #cdcccd;
+    
+        }
 }
 
   
@@ -458,6 +587,49 @@ body{
         border-bottom: 2px solid #333333;
         width: 40vw;
     }
+    /* blog elements */
+    .blog_element{
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        padding-bottom: 4vh;
+    }
+    .blog_element h1{
+        text-align: center;
+        font-size: 12px;
+    }
+    .blog_element p{
+        text-align: center;
+        font-size: 10px;
+        color: #cdcccd;
+    }
+    .title h1{
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 4vh;
+
+    }
+    .blog_text p{
+        font-size: 15px;
+        text-align: left;
+        color: #cdcccd;
+    }
+        /* faq elements */
+        .faq_element{
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            padding-bottom: 4vh;
+        }
+        .faq_number{
+            font-size: 40px;
+        }
+        .faq_question{
+            font-size: 26px;
+        }
+        .faq_answer{
+            font-size: 14px;
+            color: #cdcccd;
+    
+        }
 }
     
   
@@ -533,7 +705,49 @@ body{
         border-bottom: 2px solid #333333;
         width: 40vw;
     }
+    /* blog elements */
+    .blog_element{
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        padding-bottom: 4vh;
+    }
+    .blog_element h1{
+        text-align: center;
+        font-size: 12px;
+    }
+    .blog_element p{
+        text-align: center;
+        font-size: 10px;
+        color: #cdcccd;
+    }
+    .title h1{
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 4vh;
+
+    }
+    .blog_text p{
+        font-size: 15px;
+        text-align: left;
+        color: #cdcccd;
+    }
+        /* faq elements */
+        .faq_element{
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            padding-bottom: 4vh;
+        }
+        .faq_number{
+            font-size: 30px;
+        }
+        .faq_question{
+            font-size: 18px;
+        }
+        .faq_answer{
+            font-size: 10px;
+            color: #cdcccd;
     
+        }
   }
   
   /* 
@@ -545,6 +759,7 @@ body{
     
     body{
         padding: 0 5vw;
+        overflow-x:hidden ;
     }
     .items{
         display: grid;
@@ -639,13 +854,17 @@ body{
     }
     .info p{
         font-size: 10px;
-        margin: 0 5vw;
+        padding-left: -5vw;
+        padding-right: 10vw;
     }
     .links{
         text-align: center;
         display: grid;
         grid-template-columns: repeat(3 ,minmax(8vw,1fr));
         padding-bottom: 5vh;
+    }
+    .links a{
+        margin-left: -6vw;
     }
     footer .line{
         padding-bottom: 0;
@@ -655,5 +874,48 @@ body{
         border-bottom: 2px solid #333333;
         width: 40vw;
     }
+    /* blog elements */
+    .blog_element{
+        display: grid;
+        grid-template-columns: 60px 1fr;
+        padding-bottom: 4vh;
+    }
+    .blog_element h1{
+        text-align: center;
+        font-size: 10px;
+    }
+    .blog_element p{
+        text-align: center;
+        font-size: 8px;
+        color: #cdcccd;
+    }
+    .title h1{
+        font-size: 20px;
+        text-align: left;
+        padding-bottom: 4vh;
+
+    }
+    .blog_text p{
+        font-size: 15px;
+        text-align: left;
+        color: #cdcccd;
+    }
+        /* faq elements */
+        .faq_element{
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            padding-bottom: 4vh;
+        }
+        .faq_number{
+            font-size: 30px;
+        }
+        .faq_question{
+            font-size: 18px;
+        }
+        .faq_answer{
+            font-size: 10px;
+            color: #cdcccd;
+    
+        }
     
   }
