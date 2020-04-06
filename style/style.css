@@ -15,6 +15,24 @@ body{
 .hello h1{
     color: #403d40;
 }
+.blog_element{
+    color: #403d40;
+}
+.faq_element{
+    color: #403d40;
+}
+.contact_element h1{
+    color: #403d40;
+}
+.blog_element p{
+    color: #cdcccd;
+}
+.faq_element p{
+    color: #cdcccd;
+}
+.contact_element p{
+    color: #cdcccd;
+}
 .hello p{
     color: #cdcccd;
 }
@@ -31,6 +49,7 @@ body{
     background-color: #e8bdf5;
     margin-bottom: 5vh;
 }
+
 
 @media (min-width: 1281px) {
     .nav{
@@ -181,7 +200,37 @@ body{
     .faq_answer{
         font-size: 14px;
         color: #cdcccd;
-
+    }
+    .contact_element{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact_items h1{
+        padding-top: 2vh;
+        font-size: 20px;
+    }
+    .contact_items p{
+        font-size: 16px;
+        color: #cdcccd;
+    }
+    .form_class input[type=text]{
+        border: none;
+        margin-bottom: 1vh;
+        height: 25px;
+        width: 17.25vw;
+        border-bottom: 1px solid #cdcccd;
+    }
+    .form_class textarea{
+        margin-bottom: 1vh;
+        resize: none;
+        border: none;
+        height: 20vh;
+        width: 17.25vw;
+        border-bottom: 1px solid #cdcccd;
+    }
+    .form_class input[type=submit]{
+        border:none;
+        height: 35px;
     }
 }
   
@@ -355,6 +404,38 @@ body{
             color: #cdcccd;
     
         }
+        /* contact */
+        .contact_element{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .contact_items h1{
+            padding-top: 2vh;
+            font-size: 20px;
+        }
+        .contact_items p{
+            font-size: 16px;
+            color: #cdcccd;
+        }
+        .form_class input[type=text]{
+            border: none;
+            margin-bottom: 1vh;
+            height: 25px;
+            width: 17.25vw;
+            border-bottom: 1px solid #cdcccd;
+        }
+        .form_class textarea{
+            margin-bottom: 1vh;
+            resize: none;
+            border: none;
+            height: 20vh;
+            width: 17.25vw;
+            border-bottom: 1px solid #cdcccd;
+        }
+        .form_class input[type=submit]{
+            border: none;
+            height: 35px;
+        }
 }
   /* 
     ##Device = Tablets, Ipads (portrait)
@@ -516,6 +597,39 @@ body{
             color: #cdcccd;
     
         }
+
+        /* contact */
+        .contact_element{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .contact_items h1{
+            padding-top: 2vh;
+            font-size: 20px;
+        }
+        .contact_items p{
+            font-size: 16px;
+            color: #cdcccd;
+        }
+        .form_class input[type=text]{
+            border: none;
+            margin-bottom: 1vh;
+            height: 25px;
+            width: 70vw;
+            border-bottom: 1px solid #cdcccd;
+        }
+        .form_class textarea{
+            margin-bottom: 1vh;
+            resize: none;
+            border: none;
+            height: 20vh;
+            width: 70vw;
+            border-bottom: 1px solid #cdcccd;
+        }
+        .form_class input[type=submit]{
+            border: none;
+            height: 35px;
+        }
 }
 
   
@@ -630,6 +744,38 @@ body{
             color: #cdcccd;
     
         }
+                /* contact */
+                .contact_element{
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .contact_items h1{
+                    padding-top: 2vh;
+                    font-size: 20px;
+                }
+                .contact_items p{
+                    font-size: 16px;
+                    color: #cdcccd;
+                }
+                .form_class input[type=text]{
+                    border: none;
+                    margin-bottom: 1vh;
+                    height: 25px;
+                    width: 70vw;
+                    border-bottom: 1px solid #cdcccd;
+                }
+                .form_class textarea{
+                    margin-bottom: 1vh;
+                    resize: none;
+                    border: none;
+                    height: 20vh;
+                    width: 70vw;
+                    border-bottom: 1px solid #cdcccd;
+                }
+                .form_class input[type=submit]{
+                    border: none;
+                    height: 35px;
+                }
 }
     
   
@@ -748,6 +894,38 @@ body{
             color: #cdcccd;
     
         }
+                /* contact */
+                .contact_element{
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .contact_items h1{
+                    padding-top: 2vh;
+                    font-size: 20px;
+                }
+                .contact_items p{
+                    font-size: 16px;
+                    color: #cdcccd;
+                }
+                .form_class input[type=text]{
+                    border: none;
+                    margin-bottom: 1vh;
+                    height: 25px;
+                    width: 70vw;
+                    border-bottom: 1px solid #cdcccd;
+                }
+                .form_class textarea{
+                    margin-bottom: 1vh;
+                    resize: none;
+                    border: none;
+                    height: 20vh;
+                    width: 70vw;
+                    border-bottom: 1px solid #cdcccd;
+                }
+                .form_class input[type=submit]{
+                    border: none;
+                    height: 35px;
+                }
   }
   
   /* 
@@ -917,5 +1095,36 @@ body{
             color: #cdcccd;
     
         }
-    
+            /* contact */
+            .contact_element{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .contact_items h1{
+                padding-top: 2vh;
+                font-size: 20px;
+            }
+            .contact_items p{
+                font-size: 16px;
+                color: #cdcccd;
+            }
+            .form_class input[type=text]{
+                border: none;
+                margin-bottom: 1vh;
+                height: 25px;
+                width: 70vw;
+                border-bottom: 1px solid #cdcccd;
+            }
+            .form_class textarea{
+                margin-bottom: 1vh;
+                resize: none;
+                border: none;
+                height: 20vh;
+                width: 70vw;
+                border-bottom: 1px solid #cdcccd;
+            }
+            .form_class input[type=submit]{
+                border: none;
+                height: 35px;
+            }
   }
