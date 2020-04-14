@@ -120,6 +120,11 @@ body{
         width: 20vw;
         height: 20vw;
     }
+    .item img{
+        padding: 1vw;
+        width: 18vw;
+        height: 18vw;
+    }
     .shop{
         padding-top: 10vh;
         padding-bottom: 5vh;
@@ -158,6 +163,10 @@ body{
         border-top:2px solid #333333 ;
         border-bottom: 2px solid #333333;
         width: 8vw;
+    }
+    .date{
+        text-align: center;
+        font-size: 12px;
     }
     /* blog elements */
     .blog_element{
@@ -295,6 +304,11 @@ body{
     .item{
         width: 20vw;
         height: 20vw;
+    }
+    .item img{
+        padding: 1vw;
+        width: 18vw;
+        height: 18vw;
     }
     .hello{
         display: grid;
@@ -437,6 +451,10 @@ body{
             height: 35px;
         }
 }
+.date{
+    text-align: center;
+    font-size: 12px;
+}
   /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
@@ -499,6 +517,11 @@ body{
     .item{
         width: 40vw;
         height: 40vw;
+    }
+    .item img{
+        padding: 2vw;
+        width: 36vw;
+        height: 36vw;
     }
     .hello{
         display: grid;
@@ -631,7 +654,10 @@ body{
             height: 35px;
         }
 }
-
+.date{
+    text-align: center;
+    font-size: 12px;
+}
   
   /* 
     ##Device = Tablets, Ipads (landscape)
@@ -695,6 +721,11 @@ body{
     .item{
         width: 40vw;
         height: 40vw;
+    }
+    .item img{
+        padding: 2vw;
+        width: 36vw;
+        height: 36vw;
     }
     .items_link{
         border-top:2px solid #333333 ;
@@ -777,7 +808,10 @@ body{
                     height: 35px;
                 }
 }
-    
+.date{
+    text-align: center;
+    font-size: 12px;
+}
   
   /* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -796,6 +830,11 @@ body{
     .item{
         width: 90vw;
         height: 90vw;
+    }
+    .item img{
+        padding: 3vw;
+        width: 86vw;
+        height: 86vw;
     }
     .hello{
         display: grid;
@@ -927,7 +966,10 @@ body{
                     height: 35px;
                 }
   }
-  
+  .date{
+    text-align: center;
+    font-size: 12px;
+}
   /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
@@ -946,6 +988,11 @@ body{
     .item{
         width: 90vw;
         height: 90vw;
+    }
+    .item img{
+        padding: 3vw;
+        width: 84vw;
+        height: 84vw;
     }
     .nav{
         display: grid;
@@ -1128,3 +1175,7 @@ body{
                 height: 35px;
             }
   }
+  .date{
+    text-align: center;
+    font-size: 12px;
+}
